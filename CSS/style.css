@@ -1,6 +1,5 @@
 :root {
---accent-redish(color-redish): #FB3B64;
-    --accent-color(color-green): #55DFB4;
+--accent-redish: #FB3B64;
 }
 * {
     margin: 0;
@@ -210,7 +209,7 @@ h2 {
     z-index: 2;
 }
 .benefits-single-notebook {
-    --accent-redish: #FB3B64;
+    --accent-color: #FB3B64;
 }
 .benefits-single-notebook .benefits-image {
     margin-right: 117px;
@@ -298,12 +297,11 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 100px;
+    margin: 0 100px;
     padding: 50px;
 }
 .pricing-box {
     border-radius: 18px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -424,6 +422,132 @@ li {
     background-repeat: no-repeat;
     margin-right: 10px;
     background-image: url("../images/Close.svg");
+}
+.contact {
+    padding: 50px 100px 100px;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+}
+.contact-column {
+    max-width: 50%;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+.contact-title {
+    font-size: 49px;
+    text-align: left;
+}
+.contact-des {
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    height: 22px;
+    margin-bottom: 35px;
+}
+.contact-details a {
+    margin-right: 25px;
+    color: #A5A5A5;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+
+.details-info-email::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-image: url("../images/Mail Icon.svg");
+}
+.details-info-number::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-image: url("../images/Phone Icon.svg");
+
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.form-field {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.form-details {
+    color: #08A6E4;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 3.28px;
+}
+.form-input-name,
+.form-input-email {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #A5A5A5;
+    line-height: 25px;
+    width: 400px;
+}
+.checkbox-content {
+    margin-bottom: 30px;
+}
+.form-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.form-checkbox input {
+    position: absolute;
+    visibility: hidden;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.form-checkbox .checkbox {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+
+}
+.form-checkbox input:checked + span {
+    background-image: url("../images/Checkmark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.checkbox-text {
+    margin-left: 30px;
+    margin-right: 80px;
+    color: #707070;
+    font-size: 12px;
+    line-height: 17px;
+}
+.form .btn--send {
+    padding-left: 30px 120px;
+    max-width: 220px;
+    height: 57px;
+    color: white;
+    background-color: #08A6E4;
+    border: none;
+    border-radius: 35px;
+    box-shadow: 5px 10px 14px #07ACE629;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 250px;
+    cursor: pointer;
 }
 
 
