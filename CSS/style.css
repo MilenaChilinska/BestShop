@@ -1,3 +1,7 @@
+:root {
+--accent-redish(color-redish): #FB3B64;
+    --accent-color(color-green): #55DFB4;
+}
 * {
     margin: 0;
     padding: 0;
@@ -50,15 +54,13 @@ body {
     letter-spacing: 3.28px;
     font-weight: bold;
     font-size: 11px;
+    border-bottom: 4px solid transparent;
 }
 .page-nav-list a:hover {
     color: black;
-    text-decoration: underline solid #08A6E4;
-    text-underline-offset: 20px;
-    text-underline-position: under;
-    text-underline-style: thick;
     cursor: pointer;
-    padding: 30px 20px 20px;
+    padding: 30px;
+    border-bottom: 4px solid #08A6E4;
 }
 .about-container {
     display: flex;
@@ -91,14 +93,15 @@ body {
     font-weight: bold;
     font-family: "Open Sans", sans-serif;
     display: inline-block;
-} 
+}
 .about-banner img {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
 }
 .about-statistics {
-    margin-top: 100px;
+    margin-top: 100px
+
 }
 .statistics-container {
     display: flex;
@@ -163,6 +166,264 @@ h2 {
     font-size: 16px;
     height: 48px;
     margin-top: 12px;
+}
+.benefits {
+    padding: 100px 0;
+    background-color: #F7F7F7;
+}
+.benefits-container {
+    max-width: 1100px;
+    display: block;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.benefits-single {
+    background-color: white;
+    border: 1px solid #E8E9ED;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+.benefits-text {
+    max-width: 416px;
+    margin: 100px 35px;
+}
+.benefits-description:after {
+    content: "";
+    width: 230px;
+    height: 4px;
+    background-color: #55DFB4;
+    display: block;
+    margin-top: 50px;
+}
+.benefits-description {
+    margin-top: 30px;
+    line-height: 22px;
+}
+.benefits-image {
+    position: relative;
+}
+.benefits-image img {
+    position: relative;
+    z-index: 2;
+}
+.benefits-single-notebook {
+    --accent-redish: #FB3B64;
+}
+.benefits-single-notebook .benefits-image {
+    margin-right: 117px;
+    margin-bottom: 38px;
+}
+.benefits-single-notebook .benefits-image::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    background-color: var(--accent-color);
+    display: block;
+    border-radius: 40px;
+    position: absolute;
+    right: 0;
+    top: -40px;
+    transform: rotate(45deg);
+}
+.benefits-single-notebook .benefits-image img {
+    width: 386px;
+    height: auto;
+}
+.benefits-single-phone {
+    --accent-color: #08a6e4;
+    flex-direction: row-reverse;
+    padding: 0 20px 0 70px;
+}
+.benefits-single-phone .benefits-image::before {
+    content: "";
+    width: 320px;
+    height: 320px;
+    background-color: #07ACE6;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -20px;
+}
+.benefits-single-phone .benefits-image img {
+    width: 426px;
+    height: auto;
+}
+.benefits-single-phone .benefits-text {
+    margin: 70px 0;
+}
+.benefits-double {
+    --accent-color: #55DFB4;
+    display: flex;
+}
+.benefits-double > div {
+    margin-bottom: 0;
+    height: 370px;
+}
+.benefits-single-solo {
+    max-width: 420px;
+}
+.benefits-single-solo .benefits-text {
+    max-width: none;
+    margin: 20px 20px;
+    text-align: left;
+}
+.benefits-single-image {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #55DFB4;
+    border: none;
+    margin-left: 60px;
+
+}
+.benefits-single-image img {
+    height: auto;
+    margin-top: 55px;
+    width: 80% ;
+}
+.pricing {
+    margin: 100px auto;
+}
+.pricing-title {
+    margin-top: 70px;
+    font-size: 36px;
+}
+.pricing-boxes {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 100px;
+    padding: 50px;
+}
+.pricing-box {
+    border-radius: 18px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.pricing-box {
+    margin-top: 20px;
+    text-align: center;
+}
+.pricing-box-basic {
+    border: 1px solid #FB3B64;
+    height: 461px;
+    width: 372px;
+}
+.pricing-box-basic .pricing-type {
+    font-size: 20px;
+}
+.pricing-box-basic .pricing-amount {
+    font-size: 46px;
+    margin-top: 20px;
+    color: #FB3B64;
+    font-family: "Open Sans", sans-serif;
+}
+.pricing-list {
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+li {
+    margin-bottom: 20px;
+}
+.pricing-box-professional {
+    border: 1px solid #07ACE6;
+    box-shadow: 5px 10px 27px #07ACE629;
+    width: 405px;
+    height: 500px;
+}
+.pricing-type {
+    margin-top: 40px;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+}
+.pricing-box-professional .pricing-type {
+    font-size: 21px;
+}
+.pricing-box-professional .pricing-amount {
+    font-size: 46px;
+    color: #07ACE6;
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+.pricing-box-premium {
+    border: 1px solid #55DFB4;
+    height: 461px;
+    width: 372px;
+}
+.pricing-box-premium .pricing-amount {
+    font-size: 46px;
+    color: #55DFB4;
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+.pricing-box-basic .button {
+    background-color: #EB476E;
+    color: white;
+    padding: 18px 55px;
+    border-radius: 23px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.pricing-box-professional .button {
+    background-color: #07ACE6;
+    box-shadow: 5px 10px 14px #07ACE629;
+    color: white;
+    padding: 18px 55px;
+    border-radius: 23px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.pricing-box-premium .button {
+    background-color: #55DFB4;
+    color: white;
+    padding: 18px 55px;
+    border-radius: 23px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.pricing-box .button {
+    position: relative;
+    bottom: -25px;
+}
+.limited-offer {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Raleway, sans-serif;
+}
+.pricing-item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-image: url("../images/Ckechmark-1.svg");
+}
+.pricing-item--not::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-image: url("../images/Close.svg");
 }
 
 
