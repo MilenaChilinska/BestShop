@@ -58,8 +58,8 @@ body {
 .page-nav-list a:hover {
     color: black;
     cursor: pointer;
-    padding: 30px;
-    border-bottom: 4px solid #08A6E4;
+    padding-bottom: 25px;
+    border-bottom: 3px solid #08A6E4;
 }
 .about-container {
     display: flex;
@@ -278,7 +278,6 @@ h2 {
     background-color: #55DFB4;
     border: none;
     margin-left: 60px;
-
 }
 .benefits-single-image img {
     height: auto;
@@ -549,5 +548,42 @@ li {
     margin-left: 250px;
     cursor: pointer;
 }
-
-
+.footer {
+    background-color: #F7F7F7;
+    box-shadow: 0px -5px 40px #00000029;
+    height: 89px;
+}
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-details {
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;
+    margin-left: 100px;
+}
+.footer-icons img:first-of-type {
+    margin-right: 30px;
+    width: 24px;
+    height: 24px;
+}
+.footer-icons {
+    padding: 40px;
+    margin-right: 100px;
+    
+}
+.logo-footer {
+    color: #08A6E4;
+    font-family: Raleway, sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    height: 37px;
+    text-decoration: none;
+}
+.footer-rights {
+    color: #A5A5A5;
+    font-size: 11px;
+    height: 15px;
+}
