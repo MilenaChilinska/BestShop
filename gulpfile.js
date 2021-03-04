@@ -1,4 +1,4 @@
-const entryPath = "."
+const entryPath = ".";
 const gulp = require("gulp");
 const sass = require('gulp-sass');
 sass.compiler = require('sass');
