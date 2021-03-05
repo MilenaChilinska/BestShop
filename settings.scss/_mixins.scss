@@ -1,0 +1,5 @@
+@media notebook {
+    @media (max-width: 1352px) {
+        @content;
+    }
+}
