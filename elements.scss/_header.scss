@@ -1,35 +1,29 @@
 .header {
     width: 100%;
     height: 70px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 .container-header {
-    display: flex;
+    display: flex;  
     justify-content: space-between;
     margin-top: 15px;
     height: 70px;
     box-shadow: 0 3px 6px #00000029;
+    &_content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
 }
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
+.page-nav {
+    &_element {
+        display: flex;
+        margin-right: 100px;
+        margin-top: 25px;
+    }
 }
-.header-logo {
-    margin-left: 50px;
-    color: #08A6E4;
-    font-size: 32px;
-    height: 37px;
-    font-weight: 300;
-}
-.page-nav-list {
-    display: flex;
-}
-.page-nav-list li {
-    margin-right: 100px;
-    margin-top: 25px;
-}
-.page-nav-list li a {
+.nav_link {
     text-decoration: none;
     text-transform: uppercase;
     color: #A5A5A5;
@@ -39,10 +33,60 @@
     font-weight: bold;
     font-size: 11px;
     border-bottom: 4px solid transparent;
+
+    &:hover {
+        color: black;
+        cursor: pointer;
+        padding-bottom: 25px;
+        border-bottom: 3px solid #08A6E4;
+    }
 }
-.page-nav-list a:hover {
-    color: black;
-    cursor: pointer;
-    padding-bottom: 25px;
-    border-bottom: 3px solid #08A6E4;
-}
+
+// .header {
+//     width: 100%;
+//     height: 70px;
+// }
+// .container-header {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-top: 15px;
+//     height: 70px;
+//     box-shadow: 0 3px 6px #00000029;
+// }
+// .header-content {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     height: 100%;
+// }
+// .header-logo {
+//     margin-left: 50px;
+//     color: #08A6E4;
+//     font-size: 32px;
+//     height: 37px;
+//     font-weight: 300;
+// }
+// .page-nav-list {
+//     display: flex;
+// }
+// .page-nav-list li {
+//     margin-right: 100px;
+//     margin-top: 25px;
+// }
+// .page-nav-list li a {
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     color: #A5A5A5;
+//     height: 15px;
+//     text-align: center;
+//     letter-spacing: 3.28px;
+//     font-weight: bold;
+//     font-size: 11px;
+//     border-bottom: 4px solid transparent;
+// }
+// .page-nav-list a:hover {
+//     color: black;
+//     cursor: pointer;
+//     padding-bottom: 25px;
+//     border-bottom: 3px solid #08A6E4;
+// }
