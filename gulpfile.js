@@ -1,12 +1,9 @@
-const entryPath = ".";
+const entryPath = "."
 const gulp = require("gulp");
 const sass = require('gulp-sass');
 sass.compiler = require('sass');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
-gulpfile.js
-
-
 const browserSync = require('browser-sync').create();
 
 function compileSass(done) {
