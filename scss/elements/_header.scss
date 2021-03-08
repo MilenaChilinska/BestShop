@@ -1,0 +1,106 @@
+.header {
+    height: 70px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    display: flex;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.nav {
+    &_element {
+        
+        &:last-child {
+        padding-right: 0;
+        }
+    }
+}
+.nav_link {
+    color: $color-grey;
+    font-weight: 700;
+    font-size: 0.70rem;
+    text-transform: uppercase;
+    padding: 28px 18px 22px;
+    border-bottom: 4px solid transparent;
+    letter-spacing: 0.19rem;
+    margin-right: 10px;
+    &:hover {
+        color: $color-black;
+        border-color: $color-primary;
+    }
+}
+.page-nav-list {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-right: 10px;
+
+    @include mobile {
+        position: absolute;
+        top: 95px;
+        left: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        padding-bottom: 20px;
+        display: none;
+
+        .nav_element {
+            padding: 0;
+        }
+        .nav_link {
+            display: block;
+            padding: 14px 20px;
+        }
+    }
+}
+.menu {
+    &_btn {
+        display: none;
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        opacity: 0;
+        @include mobile {
+            &:checked {
+                ~ .page-nav-list {
+                    display: flex;
+                }
+                ~ .menu_toggle {
+                    span {
+                        &:nth-child(1) {
+                            transform: rotate(45deg) translate(2px, 5px);
+                        }
+                        &:nth-child(2) {
+                            opacity: 0;
+                        }
+                        &:nth-child(3) {
+                            transform: rotate(-45deg) translate(2px, -5px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.menu_toggle {
+    display: none;
+
+    span {
+        width: 20px;
+        height: 2px;
+        display: block;
+        margin-bottom: 3px;
+        background-color: $color-primary;
+        transition: .3s all ease-in-out;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    @include mobile {
+        display: block;
+    }
+}

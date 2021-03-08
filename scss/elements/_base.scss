@@ -15,21 +15,15 @@ h2 {
 .container {
     width: 1352px;
     margin: 0 auto;
-}
-
-
-.header-logo {
-    font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
-    font-weight: 300;
-    color: $color-primary;
-}
-.container {
-    width: 1352px;
-    margin: 0 auto;
 
     @include notebook {
         width: 100%;
         padding: 0 15px;
     }
+}
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: $color-primary;
 }
